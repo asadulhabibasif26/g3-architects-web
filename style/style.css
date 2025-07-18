@@ -8,3 +8,81 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+.dark-1{
+    color: #131313;
+}
+
+.dark-2{
+    color: #424242;
+}
+.dark-3{
+    color: #727272;
+}
+.btn-primary{
+    width: 180px;
+    height: 64px;
+    background-color: #FF900E;
+    font-size: 1.25rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+/* header style  */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+/* nav style */
+.brand{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.nav-items{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*  hero section style */
+.hero{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero > h3{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.hero > button{
+    margin-bottom: 50px;
+}
+.hero > img{
+    width: 100%;
+}
+
+/* responsive media style section */
+
+@media screen and (max-width:576px){
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
