@@ -36,6 +36,13 @@
 header{
     background-color: rgba(255, 144, 14, 0.1);
 }
+/* main section style */
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 /* nav style */
 .brand{
     font-size: 3rem;
@@ -77,12 +84,81 @@ header{
 .hero > img{
     width: 100%;
 }
+/* features section style */
+.features{
+    margin-top: 85px;
+    align-items: center;
+}
+.features-text{
+    margin-left: 73px;
+}
+.features-text > h3{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.features-text > p{
+    margin-bottom: 32px;
+}
+#quick-list{
+    font-weight: 500;
+}
+#features{
+    color: #FF900E;
+}
 
+.features-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+/* some fact section style */
+.facts-text{
+    max-width: 540px;
+}
+.facts-text > h3{
+    font-size: 2.8rem;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.facts{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    height: 241px;
+    width: 241px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.facts > h3{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #424242;
+}
+.facts > p{
+    font-size: 1.20rem;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #727272;
+}
 /* responsive media style section */
 
 @media screen and (max-width:576px){
     .nav-links{
         flex-direction: column;
-        gap: 10px;
+        gap: 10px; 
+        padding-left: 20px;
+    }
+    .features-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features{
+        flex-direction: column;
+    }
+    .features-text{
+        margin-left: 40px;
     }
 }
